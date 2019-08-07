@@ -13,8 +13,8 @@ ENDPOINT_STRING = "westcentralus"
 ENDPOINT = 'https://{}.api.cognitive.microsoft.com/'.format(ENDPOINT_STRING)
 face_client = FaceClient(ENDPOINT, CognitiveServicesCredentials(KEY))
 
-face_list = face_client.face_list.create("42069boobies")
-
+face_list_boi = face_client.face_list.create("7aeb69y2109")
+print(face_list_boi)
 count = 0
 while count < 11:
    video_capture = cv2.VideoCapture(0)
@@ -26,7 +26,7 @@ while count < 11:
    ret, frame = cv2.imencode('.jpg', frame)
    # Close device
    stream = io.BytesIO(frame)
-   face_client.face_list.add_face_from_stream("42069boobies")
+   face_client.face_list.add_face_from_stream("7aeb69y2109")
    video_capture.release()
    count += 1
 
