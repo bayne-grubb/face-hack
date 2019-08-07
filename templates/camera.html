@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>face-hack</title>
+    <link rel ="stylesheet" href ="../static/stylesheet.css">
+</head>
+ 
+    
+<body>
+    
+<div id="container">
+	<video autoplay="true" id="videoElement"></video>
+</div>
+    
+<div id="promptButton">
+    <button>Yes</button>
+    <button>No</button>
+</div>
+
+<script>
+var video = document.querySelector("#videoElement");
+
+if (navigator.mediaDevices.getUserMedia) {
+  navigator.mediaDevices.getUserMedia({ video: true })
+    .then(function (stream) {
+      video.srcObject = stream;
+    })
+    .catch(function (err0r) {
+      console.log("Something went wrong!");
+    });
+}
+</script>
+    
+</body>
+</html>
