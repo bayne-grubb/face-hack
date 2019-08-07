@@ -1,20 +1,16 @@
 body {
+background-color: #00175a
+    
+/*
 background-image: url("aexp.jpg");
 background-repeat: repeat, no-repeat;
 background-size: 100% 100%;
 background-attachment: fixed;
 overflow-y: scroll;
+*/
 }
 
-#container {
-	margin: 0px auto;
-	width: 500px;
-	height: 375px;
-	border: 10px #333 solid;
-}
-
-#videoElement {
-	width: 500px;
-	height: 375px;
-	background-color: #666;
+img {
+  width: 100%;
+  height: auto;
 }
