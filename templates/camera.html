@@ -8,9 +8,14 @@
  
     
 <body>
-    
-<div id="container">
+
+
+
+<div id="container" style="z-index: 0; position: relative;">
 	<video autoplay="true" id="videoElement"></video>
+    <div class="rectPic">
+        <img src="../static/greenrect.png" style="margin-top: -300px; margin-left: 150px; margin-bottom: 100px; z-index: 100; position: absolute;">
+    </div>
 </div>
 
 
@@ -27,6 +32,7 @@ if (navigator.mediaDevices.getUserMedia) {
     });
 }
 </script>
-    
+
+
 </body>
 </html>

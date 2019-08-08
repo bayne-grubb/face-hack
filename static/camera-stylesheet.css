@@ -7,10 +7,18 @@ body {
 	width: 500px;
 	height: 375px;
 	border: 10px #333 solid;
+	position: relative;
+	z-index: 0;
 }
 
 #videoElement {
 	width: 500px;
 	height: 375px;
 	background-color: #666;
+    z-index: 0;
+}
+
+#rectPic {
+    position: absolute;
+    margin: auto;
 }
